@@ -1,0 +1,6 @@
+ckpt_Hadmard_losschange.pth -> 
+
+perturbed_x = x + (z * std[:, None, None, None]) * (cat_map_output)
+
+loss = torch.mean(torch.sum((score * std[:, None, None, None] + z * cat_map_output)**2, dim=(1,2,3)))
+  

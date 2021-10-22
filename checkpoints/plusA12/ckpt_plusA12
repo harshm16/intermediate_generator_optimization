@@ -1,0 +1,13 @@
+ckpt_plusA12.pth -> 
+pertubed_x = x + z sigma + catmap
+loss = loss
+
+38.5% loss
+
+
+
+
+
+
+
+

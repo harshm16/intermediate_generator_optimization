@@ -1,0 +1,8 @@
+  cat_map_output = map_iterator(x,random_t)
+  perturbed_x = x + cat_map_output * std[:, None, None, None]
+  
+  score = model(perturbed_x, random_t)
+
+  loss = torch.mean(torch.sum((score * std[:, None, None, None] + cat_map_output)**2, dim=(1,2,3)))
+
+loss - 0.69 %

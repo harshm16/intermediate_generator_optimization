@@ -1,0 +1,10 @@
+ckpt_normHadmard_sameloss.pth -> 
+
+cat_map_output = map_iterator(x,random_t)
+nornmalized_cat_map = torch.nn.functional.normalize(cat_map_output, p=2.0, dim=1, eps=1e-5, out=None)
+perturbed_x = x + (z * std[:, None, None, None]) * (nornmalized_cat_map)
+
+660% loss
+
+
+

@@ -1,0 +1,10 @@
+cat_map_output = map_iterator(x,random_t)
+
+nornmalized_cmap = cat_map_output / std[:, None, None, None]
+ 
+perturbed_x = x + (z * std[:, None, None, None]) * (nornmalized_cmap)
+
+ loss = torch.mean(torch.sum((score * std[:, None, None, None] + z)**2, dim=(1,2,3)))
+
+loss ~660
+  
