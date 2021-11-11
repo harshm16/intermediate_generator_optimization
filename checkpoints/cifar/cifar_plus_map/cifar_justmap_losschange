@@ -1,6 +1,0 @@
-  cat_map_output = map_iterator(x,random_t)
-  perturbed_x = x + cat_map_output
-
-  loss = torch.mean(torch.sum((score + cat_map_output)**2, dim=(1,2,3)))
-
-loss 24%
