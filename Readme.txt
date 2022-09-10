@@ -1,3 +1,6 @@
+All the details about the experiments can be found in the paper: "IGO_dynamics_paper.pdf"
+
+
 To run the code:
 
 1) Setup the conda environment by using environment.yml 
